@@ -30,5 +30,14 @@
      et dans mon cas specifique, il savere quil montrait autre choses carrement: que le site netait pas valide depuis une centaine de jours  
    * en fait, il faut distinguer pour le meme site, lacces via le reseau interne et lacces depuis lexterieur   
    * pourquoi ca se manifeste now ? c parceque apparemment Chrome et certains utilitaires tolerent 117 jours apres lexpiration dun certif  
-     `date -d "now -117 days" == 06/02/2022` 
+     `date -d "now -117 days" == 06/02/2022` --> date qui aparait en externe sur le certif invalide    
+   * au final je soupconne quil ya ce certif pourri sur le F5 ou le Oalto  
+   * NB: vu que tomcat tournait egalement sur le meme serveur, je me suis demandé si Java netait pas mêlé au souci TLS  
+     * voici comment jai procédé
+     * check du log catalina pour voir sil ya des erreurs SSL
+     * jen ai pas trouvé: netstat -atulpen | grep LISTEN --> seul Apache ecoute sur un port "https related"  
+     * ca ma rassuré sur le fait que Java netait pas impliqué, sinon: on peut toujours fouiller dans les keystores (avec tout ce qui est cacerts)  
+
+
+   
      
