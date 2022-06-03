@@ -17,4 +17,18 @@
    * contrairement a find
    * justement il ya une base de données à initialiser avant dutiliser la commande  
 
-
+4. la commande awk permet de calculer  
+   * Oui ca on le savait déjà
+   * mais ce qui me frappe est que il extrait lui meme le digit d'un field alphanumerique  
+   * exemple concret: je cheche a sommer la taille de certain fichiers dans le cadre dun cleanup systeme  
+     `du -sh * | grep G | awk 'BEGIN{sum=0} {sum+=$1} END{print sum}` 
+     
+5. un souci avec des sites en https  
+   * g récemment renouvellé des certif dun site exposé par apache2 sous ubuntu
+   * evidemment jai pris soin de mettre les fichiers cert a la place qui etait pointée dans la conf sous sites-enabled  
+   * je me rends compte que en réalité les certifs que jai mis ne correspondaient pas (niveau date et serial number)  
+     et dans mon cas specifique, il savere quil montrait autre choses carrement: que le site netait pas valide depuis une centaine de jours  
+   * en fait, il faut distinguer pour le meme site, lacces via le reseau interne et lacces depuis lexterieur   
+   * pourquoi ca se manifeste now ? c parceque apparemment Chrome et certains utilitaires tolerent 117 jours apres lexpiration dun certif  
+     `date -d "now -117 days" == 06/02/2022` 
+     
