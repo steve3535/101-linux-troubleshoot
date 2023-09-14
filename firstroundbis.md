@@ -3,5 +3,11 @@
   * lastlog -u user
   * chsh instead of usermod -s  
 * error 403 after a curl  
-  * both basic permissions and selinux
-  * instead of memoriting semanage fcontext syntax, just restorecon -R -v
+  * both basic permissions and selinux  
+  * instead of memoriting semanage fcontext syntax, just restorecon -R -v  
+* A good discovery, to have an idea of what a system is doing, just look at journalctl -f  
+* `sos report -o xfs`  `sos report -l`  
+* the scientific method  
+> Idea: emulate old slow systems with qemu
+
+
