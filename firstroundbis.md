@@ -16,5 +16,6 @@
 > we can build a small github project around this , especially that i read auditd can also provide such features, in a more robust way
 * /etc/machine-id
 * on Centos, one can directly do dnf -y install epel-release, but on rhel we need to call the full fedora url
-* 
+* dmidecote -t 17 in lieu of dmidecode -t memory
+* nproc in lieu of lscpu
 
