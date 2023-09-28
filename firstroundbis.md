@@ -22,5 +22,7 @@
 > comment forcer lutilisation ? quand un lab commence, il a un deadline pour finir, autrement il fo reprendre de zero. les cours sont free
 > comment minimiser les couts ? Aggréger a fond avec lxd et les cgroups, agreger a fond. utiliser google calculator pour estimate.
 > Jouer sur spot vm/premptible vm en vombinaison avec LB dans plusieurs zones
+* Pour le taf:
+> Satellite server comme la piece centrale, autour du quel va sintegrer Ansible  
  
 
