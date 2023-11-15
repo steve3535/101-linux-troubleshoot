@@ -45,5 +45,6 @@
  7. un cache avec ssh lorske plusieurs clés de déploiement sont utilisées avec git ??
 
  8. setup du proxy lorske pour git on utilise git protocol et non https (exemple dnas le cas dun push)
+ 9. try not to EXPOSE a port in Dockerfile ... the http call will connect ..but returns nothing
     
      
