@@ -39,5 +39,11 @@
      * ca ma rassuré sur le fait que Java netait pas impliqué, sinon: on peut toujours fouiller dans les keystores (avec tout ce qui est cacerts)  
 
 
-   
+ 6. creer 2 microservices en Flask, sur le meme host, avec un appelant lautre (API) avec la methode request 
+    mettre un proxy sur le host ...
+
+ 7. un cache avec ssh lorske plusieurs clés de déploiement sont utilisées avec git ??
+
+ 8. setup du proxy lorske pour git on utilise git protocol et non https (exemple dnas le cas dun push)
+    
      
